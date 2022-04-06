@@ -11,6 +11,7 @@ struct ContentView: View {
     var body: some View {
         TabView {
             ViewA()
+                .badge(10)
                 .tabItem() {
                     Image(systemName: "phone.fill")
                     Text("Calls")
@@ -21,6 +22,7 @@ struct ContentView: View {
                     Text("Contacts")
                 }
             ViewC()
+                .badge(1)
                 .tabItem() {
                     Image(systemName: "slider.horizontal.3")
                     Text("Settings")
